@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    background-image: url(Login_Bg_Img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.box {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    background: transparent;
+}
+
+.box h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.input_box {
+    position: relative;
+    padding: 5px;
+}
+
+.input_box input {
+    border-radius: 15px;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    background: transparent;
+    margin: 5px;
+    width: 100%;
+    max-width: 330px;
+    height: 40px;
+    padding: 8px;
+    color: white;
+}
+
+.input_box input::placeholder {
+    color: white;
+    margin-left: 6px;
+}
+
+.input_box i {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white;
+}
+
+.remembered_chk {
+    padding: 0px 13px 0px 13px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.remembered_chk input {
+    margin-right: 5px;
+}
+
+.remembered_chk a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn_div {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn {
+    width: 100%;
+    max-width: 330px;
+    height: 40px;
+    border-radius: 15px;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, .2);
+    background: transparent;
+    background-color: white;
+}
+
+.register_link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.register_link a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .input_box input {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 100%;
+    }
+}

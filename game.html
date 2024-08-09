@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <main>
+        <div class="game-layout">
+            <h1>Rock Paper Scissor Game</h1>
+            <div class="score-btn-box">
+                <div class="scoreBox">
+                    <p>Rock <br> Paper <br> Scissors <br> Lizard <br> Spoke</p>
+                    <div>
+                        <div class="playerPoints">
+                            Player <br><br>
+                            0
+                        </div>
+                        <div class="computerPoints">
+                            Computer <br><br>
+                            0
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reset-rules-btn">
+                    <button class="reset-btn">Reset Score</button>
+                    <button class="reset-btn rules">Rules</button>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="gameBoard">
+                    <div class="player-section">
+                        <div class="names">
+                            <h2>Computer</h2>
+                        </div>
+                        <div class="C-border">
+                            <div class="C-pick">
+                                <img class="computerImage" src="stoneComputer.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="msg-container">
+                        <div class="msg">
+                            <p>Play Your Move</p>
+                        </div>
+                        <div class="btn-div">
+                            <button class="playAgainbtn">Play Again</button>
+                        </div>
+                    </div>
+
+                    <div class="player-section">
+                        <div class="names">
+                            <h2 id="userNameDisplay">Player</h2>
+                        </div>
+                        <div class="P-border blue">
+                            <div class="P-pick">
+                                <img class="playerImage" src="stonePlayer.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="player-btns">
+                    <h2 class="names">Player Buttons</h2>
+                    <button class="btn">Stone</button>
+                    <button class="btn">Paper</button>
+                    <button class="btn">Scissors</button>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
